@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -20,8 +20,8 @@
                     <path d="M16 14L19 17L16 20L13 17L16 14Z" fill="white" opacity="0.6"/>
                     <defs>
                         <linearGradient id="gradient" x1="0" y1="0" x2="32" y2="32">
-                            <stop offset="0%" stop-color="#667eea"/>
-                            <stop offset="100%" stop-color="#764ba2"/>
+                            <stop offset="0%" stop-color="#06b6d4"/>
+                            <stop offset="100%" stop-color="#3b82f6"/>
                         </linearGradient>
                     </defs>
                 </svg>
@@ -50,6 +50,21 @@
                 <div class="hero-cta">
                     <a href="#review" class="btn btn-primary">Start Review</a>
                     <a href="#how-it-works" class="btn btn-secondary">Learn More</a>
+                </div>
+
+                <!-- Preview Card -->
+                <div class="hero-preview" aria-hidden="true">
+                    <pre class="code-preview"><code><span class="added">+ def fetch_users():</span>
+<span class="context">  users = db.query("SELECT * FROM users")</span>
+<span class="context">  # TODO: paginate results</span>
+<span class="context">  return users</span>
+<span class="removed">-</span>
+<span class="removed">- def unused():</span>
+<span class="removed">-     pass</span></code></pre>
+                    <div class="preview-summary">
+                        <div class="preview-score">4 Issues</div>
+                        <div class="preview-list">Logic • Style • Security • Performance</div>
+                    </div>
                 </div>
             </div>
         </div>

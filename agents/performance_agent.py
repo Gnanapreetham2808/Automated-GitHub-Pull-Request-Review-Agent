@@ -84,7 +84,7 @@ Review this code change for performance issues and optimization opportunities.""
                 response = await llm_call(
                     system_prompt=self.SYSTEM_PROMPT,
                     user_prompt=user_prompt,
-                    model="gpt-4o-mini",
+                    model="gemini-1.5-flash",
                     temperature=0.3
                 )
                 

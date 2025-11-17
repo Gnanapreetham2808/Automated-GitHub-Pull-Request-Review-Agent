@@ -85,7 +85,7 @@ Review this code change for security vulnerabilities and unsafe patterns."""
                 response = await llm_call(
                     system_prompt=self.SYSTEM_PROMPT,
                     user_prompt=user_prompt,
-                    model="gpt-4o-mini",
+                    model="gemini-1.5-flash",
                     temperature=0.2  # Lower temperature for security analysis
                 )
                 

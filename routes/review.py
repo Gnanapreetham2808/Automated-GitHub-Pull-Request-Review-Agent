@@ -287,7 +287,7 @@ Provide a brief 2-3 sentence summary highlighting the most critical findings."""
         summary = await llm_call(
             system_prompt="You are a code review summarizer. Provide concise, actionable summaries.",
             user_prompt=prompt,
-            model="gpt-4o-mini",
+            model="gemini-1.5-flash",
             temperature=0.3
         )
         return summary.strip()
